@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6e644df4fc842824f78cd55a1fae98fc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6e644df4fc842824f78cd55a1fae98fc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6e644df4fc842824f78cd55a1fae98fc = L.map(
+                "map_6e644df4fc842824f78cd55a1fae98fc",
+                {
+                    center: [6.0, 6.9],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8007b00fe0d7cf1dbbbabab5dafece96 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "OpenTopoMap",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8007b00fe0d7cf1dbbbabab5dafece96.addTo(map_6e644df4fc842824f78cd55a1fae98fc);
+        
+    
+            var feature_group_b4e7012dd15a040f57486a62ef3f01b8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d1419f0db235c582ca5f087455e4a2d2 = L.marker(
+                [6.15, 6.8667],
+                {
+}
+            ).addTo(feature_group_b4e7012dd15a040f57486a62ef3f01b8);
+        
+    
+            var icon_176f0792455ec6fd8c828610802f9b7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_363d0101313c5e134cd71475d65bd22c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b81d8d68ee63e4dee1c9de5a9d37648 = $(`<div id="html_4b81d8d68ee63e4dee1c9de5a9d37648" style="width: 100.0%; height: 100.0%;"><b>Okonkwo's Compound (Umuofia)</b><br><b>Category:</b> Traditional<br><i>Okonkwo was a wealthy farmer and had two barns full of yams. He had three wives and a large compound.</i></div>`)[0];
+                popup_363d0101313c5e134cd71475d65bd22c.setContent(html_4b81d8d68ee63e4dee1c9de5a9d37648);
+            
+        
+
+        marker_d1419f0db235c582ca5f087455e4a2d2.bindPopup(popup_363d0101313c5e134cd71475d65bd22c)
+        ;
+
+        
+    
+    
+                marker_d1419f0db235c582ca5f087455e4a2d2.setIcon(icon_176f0792455ec6fd8c828610802f9b7a);
+            
+    
+            var marker_031ac39f4999fb099a9264850f9a751a = L.marker(
+                [6.145, 6.862],
+                {
+}
+            ).addTo(feature_group_b4e7012dd15a040f57486a62ef3f01b8);
+        
+    
+            var icon_ce103a1a5c2a9b2d12754f735e5bb32c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f785c0b076f9d70696a0170a2c34bf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88af2e5959f3c4886404a07014b2ddd4 = $(`<div id="html_88af2e5959f3c4886404a07014b2ddd4" style="width: 100.0%; height: 100.0%;"><b>The Marketplace</b><br><b>Category:</b> Traditional<br><i>The market-place was full of people... Umuofia was feared by all its neighbours. It was powerful in war and in magic.</i></div>`)[0];
+                popup_0f785c0b076f9d70696a0170a2c34bf8.setContent(html_88af2e5959f3c4886404a07014b2ddd4);
+            
+        
+
+        marker_031ac39f4999fb099a9264850f9a751a.bindPopup(popup_0f785c0b076f9d70696a0170a2c34bf8)
+        ;
+
+        
+    
+    
+                marker_031ac39f4999fb099a9264850f9a751a.setIcon(icon_ce103a1a5c2a9b2d12754f735e5bb32c);
+            
+    
+            var marker_f5c8078efa26b8f5e15386dd486de295 = L.marker(
+                [6.16, 6.875],
+                {
+}
+            ).addTo(feature_group_b4e7012dd15a040f57486a62ef3f01b8);
+        
+    
+            var icon_fc517495fc4bf3aa2c2e471139268199 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc6bbec5b30bcc8a778582c1d06d680b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c06234770aa2999cb1b4c63a0d0a48f4 = $(`<div id="html_c06234770aa2999cb1b4c63a0d0a48f4" style="width: 100.0%; height: 100.0%;"><b>The Evil Forest (Umuofia)</b><br><b>Category:</b> Sacred/Taboo<br><i>Every clan had an Evil Forest into which was thrown all those who died of the really evil diseases... It was an evil forest, alive with sinister forces.</i></div>`)[0];
+                popup_cc6bbec5b30bcc8a778582c1d06d680b.setContent(html_c06234770aa2999cb1b4c63a0d0a48f4);
+            
+        
+
+        marker_f5c8078efa26b8f5e15386dd486de295.bindPopup(popup_cc6bbec5b30bcc8a778582c1d06d680b)
+        ;
+
+        
+    
+    
+                marker_f5c8078efa26b8f5e15386dd486de295.setIcon(icon_fc517495fc4bf3aa2c2e471139268199);
+            
+    
+            feature_group_b4e7012dd15a040f57486a62ef3f01b8.addTo(map_6e644df4fc842824f78cd55a1fae98fc);
+        
+    
+            var feature_group_eba341a77a9d9ce8959a3f7e9c5abb40 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_9c342131895200166a365ad1992754f6 = L.marker(
+                [5.85, 7.0],
+                {
+}
+            ).addTo(feature_group_eba341a77a9d9ce8959a3f7e9c5abb40);
+        
+    
+            var icon_02809467c6870e3ba184265ba716638c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86237a179cc9b3f8352df85c1f9cea7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c429b60555711ff80a8c42f0afcb17b = $(`<div id="html_9c429b60555711ff80a8c42f0afcb17b" style="width: 100.0%; height: 100.0%;"><b>Mbanta (Motherland)</b><br><b>Category:</b> Exile<br><i>It was a little village called Mbanta, just beyond the borders of Mbaino... Okonkwo was well received by his mother's kinsmen.</i></div>`)[0];
+                popup_86237a179cc9b3f8352df85c1f9cea7c.setContent(html_9c429b60555711ff80a8c42f0afcb17b);
+            
+        
+
+        marker_9c342131895200166a365ad1992754f6.bindPopup(popup_86237a179cc9b3f8352df85c1f9cea7c)
+        ;
+
+        
+    
+    
+                marker_9c342131895200166a365ad1992754f6.setIcon(icon_02809467c6870e3ba184265ba716638c);
+            
+    
+            var marker_1db0bef5550a71cc8752ac63aac95ac7 = L.marker(
+                [6.1615, 6.876],
+                {
+}
+            ).addTo(feature_group_eba341a77a9d9ce8959a3f7e9c5abb40);
+        
+    
+            var icon_87204e97b7cf3ce29710974599dec4f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af59f4504d7bf761095f772a162e29eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a19c3a57761825d24e4dba1b1800216b = $(`<div id="html_a19c3a57761825d24e4dba1b1800216b" style="width: 100.0%; height: 100.0%;"><b>Christian Mission Church</b><br><b>Category:</b> Colonial<br><i>They asked for a plot of land to build their church... The elders offered them the Evil Forest, believing they would die within four days.</i></div>`)[0];
+                popup_af59f4504d7bf761095f772a162e29eb.setContent(html_a19c3a57761825d24e4dba1b1800216b);
+            
+        
+
+        marker_1db0bef5550a71cc8752ac63aac95ac7.bindPopup(popup_af59f4504d7bf761095f772a162e29eb)
+        ;
+
+        
+    
+    
+                marker_1db0bef5550a71cc8752ac63aac95ac7.setIcon(icon_87204e97b7cf3ce29710974599dec4f7);
+            
+    
+            feature_group_eba341a77a9d9ce8959a3f7e9c5abb40.addTo(map_6e644df4fc842824f78cd55a1fae98fc);
+        
+    
+            var feature_group_f3353ce0495b3d90797254a53096f483 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d2df70a9c3d2b333eec3c2ef186173bd = L.marker(
+                [6.13, 6.85],
+                {
+}
+            ).addTo(feature_group_f3353ce0495b3d90797254a53096f483);
+        
+    
+            var icon_0dc57d2b38324cc5ddd5eccfbe3ac5a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_409d95a0fb31571f2b8f0385392ec801 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de95cb7aad23d5cf5cb8c6de7de95071 = $(`<div id="html_de95cb7aad23d5cf5cb8c6de7de95071" style="width: 100.0%; height: 100.0%;"><b>District Commissioner's Court</b><br><b>Category:</b> Colonial<br><i>The white man had also built a court where the District Commissioner judged cases in ignorance.</i></div>`)[0];
+                popup_409d95a0fb31571f2b8f0385392ec801.setContent(html_de95cb7aad23d5cf5cb8c6de7de95071);
+            
+        
+
+        marker_d2df70a9c3d2b333eec3c2ef186173bd.bindPopup(popup_409d95a0fb31571f2b8f0385392ec801)
+        ;
+
+        
+    
+    
+                marker_d2df70a9c3d2b333eec3c2ef186173bd.setIcon(icon_0dc57d2b38324cc5ddd5eccfbe3ac5a1);
+            
+    
+            var marker_0484f5cc3dc7276d934fc2948c818f8d = L.marker(
+                [5.852, 7.002],
+                {
+}
+            ).addTo(feature_group_f3353ce0495b3d90797254a53096f483);
+        
+    
+            var icon_3f70c59bddc66bb3b6ac31bc5509212c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea2b5faf4f2ea50345ffdda0b8e730d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2e25cf3dfc449c6f10c1a0add2ca607 = $(`<div id="html_c2e25cf3dfc449c6f10c1a0add2ca607" style="width: 100.0%; height: 100.0%;"><b>The Royal Python Sanctuary</b><br><b>Category:</b> Sacred/Taboo<br><i>The royal python was the most revered animal in Mbanta and all the surrounding clans. It was addressed as 'Our Father'.</i></div>`)[0];
+                popup_ea2b5faf4f2ea50345ffdda0b8e730d2.setContent(html_c2e25cf3dfc449c6f10c1a0add2ca607);
+            
+        
+
+        marker_0484f5cc3dc7276d934fc2948c818f8d.bindPopup(popup_ea2b5faf4f2ea50345ffdda0b8e730d2)
+        ;
+
+        
+    
+    
+                marker_0484f5cc3dc7276d934fc2948c818f8d.setIcon(icon_3f70c59bddc66bb3b6ac31bc5509212c);
+            
+    
+            feature_group_f3353ce0495b3d90797254a53096f483.addTo(map_6e644df4fc842824f78cd55a1fae98fc);
+        
+    
+            var layer_control_64bfc5ce15a074b65b7ab2402f2e1da4_layers = {
+                base_layers : {
+                    "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png" : tile_layer_8007b00fe0d7cf1dbbbabab5dafece96,
+                },
+                overlays :  {
+                    "Part 1: Traditional Igbo Space" : feature_group_b4e7012dd15a040f57486a62ef3f01b8,
+                    "Part 2: Exile in Mbanta" : feature_group_eba341a77a9d9ce8959a3f7e9c5abb40,
+                    "Part 3: Colonial Encounter \u0026 Collapse" : feature_group_f3353ce0495b3d90797254a53096f483,
+                },
+            };
+            let layer_control_64bfc5ce15a074b65b7ab2402f2e1da4 = L.control.layers(
+                layer_control_64bfc5ce15a074b65b7ab2402f2e1da4_layers.base_layers,
+                layer_control_64bfc5ce15a074b65b7ab2402f2e1da4_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_6e644df4fc842824f78cd55a1fae98fc);
+
+        
+    
+            var poly_line_00c9cd36fd3426bc257b42af93ae4337 = L.polyline(
+                [[6.0159, 6.8667], [5.85, 7.0]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": "5, 10", "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_6e644df4fc842824f78cd55a1fae98fc);
+        
+    
+            poly_line_00c9cd36fd3426bc257b42af93ae4337.bindTooltip(
+                `<div>
+                     Okonkwo's Exile Journey
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
